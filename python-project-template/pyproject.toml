@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-template"
+version = "0.1.0"
+description = "Modèle de projet Python scientifique"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "scipy", "matplotlib", "pyyaml"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "jupyterlab", "ipykernel"]
+
+[tool.setuptools.packages.find]
+where = ["code/src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88

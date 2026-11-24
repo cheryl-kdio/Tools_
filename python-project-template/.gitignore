@@ -1,0 +1,25 @@
+# Python et environnements
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+# Données et résultats : ne conserver que les dossiers
+/data/**
+!/data/**/
+!/data/**/.gitkeep
+/outputs/**
+!/outputs/**/
+!/outputs/**/.gitkeep
+# Système et IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,7 @@
+# Paramètres scientifiques : exemples à adapter.
+project:
+  random_seed: 42
+statistics:
+  alpha: 0.05
+simulation:
+  n_simulations: 10000
